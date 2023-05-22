@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css">
+
+</head>
+<body>
+    <form action="main_site.html">
+        <div>
+            <!-- first name 부분 -->
+            <label for="fname">First name</label>
+            <input type="text" name="firstname" id="fname" value="Lee">
+        </div>
+        <p></p>
+        <div>
+            <!-- last name 부분-->
+            <label for="lname">Last name</label>
+            <input type="text" name="lastname" id="lname" value="donghwan">
+        </div>
+        <p></p>
+        <div>
+            <!-- user name 부분 -->
+            <label for="uname">Username</label>
+            <input type="text" name="username" id="uname" placeholder="Username" value="leedonghwan">
+        </div>
+        <p></p>
+        <div>
+            <!-- email 부분 -->
+            <label for="email">Email (Optional)</label>
+            <input type="email" name="email" id="email" placeholder="you@example.com" value="you@example.com">
+        </div>
+        <p></p>
+        <div>
+            <!-- 주소 부분 -->
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" placeholder="1234 Man St" value="guro">
+        </div>
+        <p></p>
+        <div>
+            <!-- 상세 주소 부분 -->
+            <label for="address2">Address 2 (Optional)</label>
+            <input type="text" name="address2" id="address2" placeholder="Apartment or suite" value="twin">
+        </div>
+        <p></p>
+        <div>
+            <!-- 나라 select 부분 -->
+            <label for="country">Countyry</label>
+            <select name="country" id="country">
+                <option value="" >Choose..</option>
+                <option value="korea" selected>Korea</option>
+                <option value="japan">Japen</option>
+                <option value="china">China</option>
+            </select>
+        </div>
+        <p></p>
+        <div>
+            <!-- 도시 select 부분 -->
+            <label for="state">State </label>
+            <select name="state" id="state">
+                <option value="">Choose..</option>
+                <option value="seoul" selected>Seoul</option>
+                <option value="dokyo">Dokyo</option>
+                <option value="beijing">Beijing</option>
+            </select>
+        </div>
+        <p></p>
+        <div>
+            <!-- 파일 선택 -->
+            <label for="zip">Zip </label>
+            <input type="file" name="zip" id="zip">
+        </div>
+        <p></p>
+        <hr>
+        <!-- checkbox 부분 -->
+        <div>
+            <input type="checkbox" name="shippingaddress" id="sa" checked>
+            <label for="sa"> Shipping address is the same as my billing address</label>
+        </div>
+        <div>
+            <input type="checkbox" name="savethisinformation" id="sti">
+            <label for="sti"> Save this information for next time</label>
+        </div>
+        <hr>
+        <div>
+            <h3>Payment</h3>
+            <!-- radio 부분 -->
+            <div>
+                <input type="radio" name="card" id="cc" value="creditcard" checked>
+                <label for="cc"> Credit card</label>
+            </div>
+            <div>
+                <input type="radio" name="card" id="dc" value="debitcard">
+                <label for="dc"> Debit card</label>
+            </div>
+            <div>
+                <input type="radio" name="card" id="pp" value="paypal">
+                <label for="pp"> Paypal</label>
+        </div>
+        <p></p>
+        <div>
+            <label for="noc">Name on card</label>
+            <input type="text" name="nameoncard" id="noc" value="leedonghwan">
+        </div>
+        <p></p>
+        <div>
+            <label for="ccn">Credit card number</label>
+            <input type="text" name="creditcard" id="ccn" value="336-1234-5678">
+        </div>
+        <p></p>
+        <div>
+            <!-- 날짜 설정 -->
+            <label for="ed">Expiration Date</label>
+            <input type="date" name="expiration" id="ed" value="2023-05-16">
+        </div>
+        <p></p>
+        <div>
+            <label for="ccv">CCV: </label>
+            <input type="text" name="ccv" id="ccv" value="336">
+        </div>
+        <p></p>
+        <div>
+            <button class="btn btn-primary" type="submit">Comtinue to Checkout</button>
+        </div>
+        </div>
+    </form>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.js"></script>
+
+</html>
